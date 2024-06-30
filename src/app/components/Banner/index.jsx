@@ -18,7 +18,7 @@ const Banner = () => {
         <div className={styles.date}>
           <p>Սեպտեմբեր</p>
           <p>7</p>
-          <p>Կիրակի</p>
+          <p>Շաբաթ</p>
         </div>
         <CountDown />
       </div>
