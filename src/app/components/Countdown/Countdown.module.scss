@@ -1,0 +1,97 @@
+
+.heading {
+    font: 300 28px/26px "Noto Serif Armenian", serif;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 16px 0;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        font: 300 36px/32px "Noto Serif Armenian", serif;
+        padding: 0 24px;
+    }
+}
+
+.counterArea {
+    align-items: center;
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 101%;
+    z-index: 1; 
+
+    &::after {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; 
+        z-index: -1;
+        background: rgba(0,0,0,.7);
+    }
+}
+
+.expires {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 0 16px 16px;
+
+    @media only screen and (min-width: 375px) {
+        gap: 32px;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.time,
+.timeSeconds {
+    color: #fff;
+    font: 300 28px/26px "Noto Serif Armenian", serif;
+    letter-spacing: 0.5px;
+
+    @media only screen and (min-width: 768px) {
+        font: 300 32px/26px "Noto Serif Armenian", serif;
+    }
+}
+
+.date {
+    font: 300 24px/26px "Noto Serif Armenian", serif;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+.timeSeconds {
+    animation: pulse 1s ease infinite;
+}
+
+.description {
+    display: flex;
+    font: 300 24px/ 26px "Noto Serif Armenian", serif;
+    letter-spacing: 0.5px;
+    gap: 32px;
+    justify-content: center;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.90);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}

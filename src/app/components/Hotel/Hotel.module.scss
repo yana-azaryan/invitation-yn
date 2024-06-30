@@ -1,0 +1,56 @@
+.wrapper {
+    background-image:
+    url(../../../../public/images/yerevan.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 0;
+
+    @media only screen and (min-width: 768px) {
+        padding: 80px 0;
+        gap: 36px;
+    }
+
+    svg {
+        animation: jump 1s ease-in-out infinite;
+    }
+}
+
+.loactionWrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.timing {
+    font: 400 26px/28px "MonteCarlo", cursive;
+}
+
+.location {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+.map {
+    margin: 32px 0;
+    max-width: 80%;
+    align-self: center;
+}
+
+.image {
+    width: 24px;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}

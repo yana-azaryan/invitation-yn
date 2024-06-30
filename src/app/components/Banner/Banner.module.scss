@@ -1,0 +1,66 @@
+.bannerWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.invitation {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 42px 0;
+    max-width: 85%;
+    font: 300 34px/48px "Noto Serif Armenian", serif;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+.invitation div {
+    text-align: center;
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 800px;
+    }
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (min-width: 375px) {
+        flex-direction: row;
+    }
+
+    p {
+        font: 300 26px/40px "Noto Serif Armenian", serif;
+        letter-spacing: 0.5px;
+        font-style: italic;
+        padding: 0 20px;
+
+        @media only screen and (min-width: 375px) {
+            font: 300 30px/40px "Noto Serif Armenian", serif;
+            padding: 40px 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            padding: 70px 40px;
+        }
+    }
+}
+
+.image {
+    object-fit: cover !important;
+    height: 400px !important;
+    position: relative !important;
+    width: 100%;
+
+    @media only screen and (min-width: 1024) {
+        min-height: 100% !important;
+        object-fit: contain !important;
+    }
+}
