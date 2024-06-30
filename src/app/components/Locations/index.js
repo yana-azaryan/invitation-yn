@@ -1,11 +1,8 @@
 "use client";
-import useScreenSizeInfo from "../../hooks/useScreenSizeInfo";
 
 import styles from "./Locations.module.scss";
 
 const Locations = () => {
-  const isMobile = useScreenSizeInfo() < 768;
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.loactionWrapper}>
@@ -42,14 +39,6 @@ const Locations = () => {
           </div>
         </div>
       </div>
-      {isMobile && (
-        <img
-          src={"/invitationImage.jpeg"}
-          className={styles.image}
-          objectFit="cover"
-          style={{ width: "100%" }}
-        />
-      )}
       <div className={styles.loactionWrapper}>
         <svg
           className={styles.logo}
