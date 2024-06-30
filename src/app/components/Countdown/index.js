@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import styles from "./CountDown.module.scss";
+import styles from "./Countdown.module.scss";
 
 const CountDown = () => {
   const [isExpired, setIsExpired] = useState(false);
